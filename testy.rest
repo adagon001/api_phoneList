@@ -1,0 +1,72 @@
+
+
+POST http://localhost:5000/api/v1/phone-numbers/login   
+Content-Type: application/json
+
+{
+    "name":"Adminko",
+    "password":"Adminko"
+}
+###
+POST http://localhost:5000/api/v1/phone-numbers/login    
+Content-Type: application/json
+
+{
+    "name":"User",
+    "password":"User"
+}
+###
+GET http://localhost:5000/api/v1/phone-numbers/all
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkdXNlcnMiOjIsIm5hbWUiOiJVc2VyIiwicGFzc3dvcmQiOiJVc2VyIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjA0MzQ1MjMwfQ.G__kR3WMqZj_Jw-rJfYd6HAydDs3buo4pDhPS7h2yqE"
+}
+###
+POST http://localhost:5000/api/v1/phone-numbers/new
+Content-Type: application/json
+
+{
+    "meno":"adamko6",
+    "cislo":"0904120400",
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkdXNlcnMiOjEsIm5hbWUiOiJBZG1pbmtvIiwicGFzc3dvcmQiOiJBZG1pbmtvIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MDQzNDU5NzZ9.lFS23R2Ub4gaKZEqm_SHvlL6qgSPnR0siLfu-pDgDLU"
+}
+###
+POST http://localhost:5000/api/v1/phone-numbers/update
+Content-Type: application/json
+
+{
+    "meno":"adamko5",
+    "cislo":"0904120404",
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkdXNlcnMiOjEsIm5hbWUiOiJBZG1pbmtvIiwicGFzc3dvcmQiOiJBZG1pbmtvIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MDQzNDU5NzZ9.lFS23R2Ub4gaKZEqm_SHvlL6qgSPnR0siLfu-pDgDLU"
+}
+###
+GET http://localhost:5000/api/v1/phone-numbers/findname/adamko0
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkdXNlcnMiOjIsIm5hbWUiOiJVc2VyIiwicGFzc3dvcmQiOiJVc2VyIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjA0MzQ1MjMwfQ.G__kR3WMqZj_Jw-rJfYd6HAydDs3buo4pDhPS7h2yqE"
+}
+###
+GET http://localhost:5000/api/v1/phone-numbers/findnumber/0904120400
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkdXNlcnMiOjIsIm5hbWUiOiJVc2VyIiwicGFzc3dvcmQiOiJVc2VyIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjA0MzQ1MjMwfQ.G__kR3WMqZj_Jw-rJfYd6HAydDs3buo4pDhPS7h2yqE"
+}
+###
+DELETE http://localhost:5000/api/v1/phone-numbers/delete/0904120400
+Content-Type: application/json
+
+{
+    "cislo":"0904120400",
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkdXNlcnMiOjEsIm5hbWUiOiJBZG1pbmtvIiwicGFzc3dvcmQiOiJBZG1pbmtvIiwiYWRtaW4iOnRydWV9LCJpYXQiOjE2MDQzNDU1OTV9.n3v-zlRcp1ouHA-q7-BHI1kq4tkaPB6c-wrBAXNdLgs"
+}
+###
+GET http://localhost:5000/api/v1/phone-numbers/all/1/2
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkdXNlcnMiOjIsIm5hbWUiOiJVc2VyIiwicGFzc3dvcmQiOiJVc2VyIiwiYWRtaW4iOmZhbHNlfSwiaWF0IjoxNjA0MzQ1MjMwfQ.G__kR3WMqZj_Jw-rJfYd6HAydDs3buo4pDhPS7h2yqE"
+}
+###
